@@ -1,11 +1,42 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Imagined speech EEG dataset — short words condition (Nguyen et al. 2017)",
+  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Participants received auditory and visual cues to imagine speaking specific words, with data collected at 256 Hz using 64 EEG channels. The dataset includes 5,400 trials total and has been preprocessed with bandpass filtering (8-70 Hz), notch filtering at 60 Hz, and artifact removal, making it suitable for brain-computer interface research and motor imagery classification studies.",
+  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system with 64 channels (60 EEG, 4 EOG) at 256 Hz sampling rate using a standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.0 s intervals) and visual cues. Each trial lasted 2 seconds, with analysis performed on 5-second intervals following the final beep, subsequently split into 3 overlapping 2-second epochs. Data were preprocessed with a 5th-order Butterworth bandpass filter (8-70 Hz), 60 Hz notch filter, and adaptive EOG artifact removal. This is a republication of the original Nguyen et al. 2017 dataset, preprocessed and formatted according to BIDS standards by the Mother of All BCI Benchmarks (MOABB) project.",
+  "license": "other-open",
+  "dataset_type": "derivative",
   "authors": {
     "Chuong H. Nguyen": {},
     "George K. Karavas": {},
     "Panagiotis Artemiadis": {}
   },
+  "keywords": [
+    {
+      "term": "imagined speech"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "Riemannian manifold"
+    },
+    {
+      "term": "covariance matrix"
+    },
+    {
+      "term": "relevance vector machines"
+    },
+    {
+      "term": "short words"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1088/1741-2552/aa8235",
@@ -33,51 +64,21 @@
       "relation_type": "References"
     }
   ],
-  "title": "Nguyen2017-S",
-  "license": "other-open",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "397.0 MB (7 files)"
   ],
   "formats": [
     ".edf",
     ".json",
+    ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). The study employed a motor imagery paradigm with auditory and visual cueing, yielding 5,400 trials analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications.",
-  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, EOG artifact removal via adaptive filtering. Trials were 2 seconds in duration, extracted from a 5-second post-stimulus interval following an auditory beep sequence.",
-  "keywords": [
-    {
-      "term": "imagined speech"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "Riemannian manifold"
-    },
-    {
-      "term": "covariance matrix"
-    },
-    {
-      "term": "relevance vector machines"
-    },
-    {
-      "term": "short words"
-    }
-  ],
-  "source_hash": "20d4e50ebf3e36b0fc45d3b316bbe9fc5c051cc345b462e870a146e6e0769078"
+  "source_hash": "ca92ddf761a115495606926d11b2bf4908d4051164176500de573f1c941ebce8"
 }
