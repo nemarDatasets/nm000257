@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined speech EEG dataset — short words condition (Nguyen et al. 2017)",
-  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Participants received auditory and visual cues to imagine speaking specific words, with data collected at 256 Hz using 64 EEG channels. The dataset includes 5,400 trials total and has been preprocessed with bandpass filtering (8-70 Hz), notch filtering at 60 Hz, and artifact removal, making it suitable for brain-computer interface research and motor imagery classification studies.",
-  "methods_description": "EEG data were acquired using a BrainProducts ActiCHamp system with 64 channels (60 EEG, 4 EOG) at 256 Hz sampling rate using a standard 10-20 montage. Participants performed imagined speech tasks cued by auditory beeps (5 beeps at 1.0 s intervals) and visual cues. Each trial lasted 2 seconds, with analysis performed on 5-second intervals following the final beep, subsequently split into 3 overlapping 2-second epochs. Data were preprocessed with a 5th-order Butterworth bandpass filter (8-70 Hz), 60 Hz notch filter, and adaptive EOG artifact removal. This is a republication of the original Nguyen et al. 2017 dataset, preprocessed and formatted according to BIDS standards by the Mother of All BCI Benchmarks (MOABB) project.",
+  "description": "This dataset contains preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Data were acquired at 256 Hz using 64 channels and analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications. The motor imagery paradigm employed auditory cueing, yielding 1,800 trials suitable for BCI research and benchmarking.",
+  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and EOG artifact removal via adaptive filtering. Trials were 5 seconds in duration, extracted from a post-stimulus interval following an auditory beep sequence.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -80,5 +80,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "ca92ddf761a115495606926d11b2bf4908d4051164176500de573f1c941ebce8"
+  "source_hash": "0dfb34a8c90996a32734bfddb05252e8a09b399c639f2f8e3624b319aac83816"
 }
