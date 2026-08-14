@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined speech EEG dataset — short words condition (Nguyen et al. 2017)",
-  "description": "This dataset contains preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Data were acquired at 256 Hz using 64 channels and analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications. The motor imagery paradigm employed auditory cueing, yielding 1,800 trials suitable for BCI research and benchmarking.",
-  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and EOG artifact removal via adaptive filtering. Trials were 5 seconds in duration, extracted from a post-stimulus interval following an auditory beep sequence.",
+  "description": "This dataset contains preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Data were acquired at 256 Hz using 64 channels and analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications. The motor imagery paradigm employed auditory and visual cueing, yielding 1,800 trials suitable for BCI research and benchmarking.",
+  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and EOG artifact removal via adaptive filtering. Trials of 2 seconds duration were extracted from a 5-second post-stimulus interval following an auditory beep sequence.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -49,11 +49,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000257",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -62,6 +57,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000257",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "resource_type_general": "Dataset",
@@ -70,15 +70,16 @@
     "eeg"
   ],
   "sizes": [
-    "397.0 MB (7 files)"
+    "2.0 GB (13 files)"
   ],
   "formats": [
     ".edf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "source_hash": "0dfb34a8c90996a32734bfddb05252e8a09b399c639f2f8e3624b319aac83816"
+  "source_hash": "e09b9e9d860bd8a1335e8c8aaf04841636ffa394f7a9c4d38e9aea3b57512abf"
 }
