@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Imagined speech EEG dataset — short words condition (Nguyen et al. 2017)",
-  "description": "This dataset contains preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Data were acquired at 256 Hz using 64 channels and analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications. The motor imagery paradigm employed auditory and visual cueing, yielding 1,800 trials suitable for BCI research and benchmarking.",
-  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and EOG artifact removal via adaptive filtering. Trials of 2 seconds duration were extracted from a 5-second post-stimulus interval following an auditory beep sequence.",
+  "description": "This dataset comprises preprocessed EEG recordings from 6 healthy participants performing imagined speech tasks with three short word conditions (out, in, up). Data were acquired at 256 Hz using 64 channels with a motor imagery paradigm employing auditory and visual cueing. The dataset includes 1,800 trials analyzed using Riemannian manifold methods and relevance vector machines for brain-computer interface applications.",
+  "methods_description": "EEG data were acquired at 256 Hz using 64 channels (60 EEG, 4 EOG) with a BrainProducts ActiCHamp system. Preprocessing included bandpass filtering (8-70 Hz, 5th order Butterworth), 60 Hz notch filtering, and EOG artifact removal via adaptive filtering. Trials were 2 seconds in duration, extracted from a 5-second post-stimulus interval following an auditory beep sequence.",
   "license": "other-open",
   "dataset_type": "derivative",
   "authors": {
@@ -81,5 +81,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "e09b9e9d860bd8a1335e8c8aaf04841636ffa394f7a9c4d38e9aea3b57512abf"
+  "source_hash": "f921ae2efaef99b6e877ca825f3261c200955e52478ffd53def8a79140a0ea0a"
 }
